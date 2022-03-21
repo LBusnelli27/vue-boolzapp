@@ -14,13 +14,14 @@ i {
     height: 100vh;
 }
 
+/* * LEFT side of app (all the chats) */
 .my-chat-container {
-    padding: 1rem;
     background-color: white;
 }
 
 .my-chat-user {
-    border-right: 2px solid #dfdfdf;
+    border-right: 2px solid #d5d5d5;
+    background-color: #eaeaea;
 }
 
 .my-avatar-img {
@@ -52,4 +53,11 @@ i {
 
 .my-specific-chat:hover {
     background-color: #e9ebeb;
+}
+
+
+/* * RIGHT side of app (specific chat) */
+
+.my-top-current-chat {
+    background-color: #eaeaea;
 }

@@ -34,7 +34,7 @@
                     <div class="my-chat-user col-12 d-flex justify-content-between align-items-center p-3">
                         <div class="d-flex align-items-center">
                             <img class="my-avatar-img me-3" src="img/User-Luca.png" alt="User Luca Img">
-                            <h3 class="d-inline">Luca</h3>
+                            <h5 class="d-inline">Luca</h5>
                         </div>
                         <div>
                             <i class="fa-solid fa-circle-notch"></i>
@@ -61,10 +61,10 @@
                     <div v-for="(element, index) in contacts" class="my-specific-chat col-12 p-2 d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center">
                             <div>
-                                <img class="my-avatar-img me-2" :src="'img/User-' + contacts[index].name + '.png'" alt="User Michele Img">
+                                <img class="my-avatar-img me-2" :src="'img/User-' + contacts[index].name + '.png'" :alt="'User ' + contacts[index].name + ' Img'">
                             </div>
                             <div>
-                                <h4>{{ contacts[index].name }}</h4>
+                                <h5>{{ contacts[index].name }}</h5>
                                 <p>Ultimo messaggio inviato</p>
                             </div>
                         </div>
@@ -77,8 +77,25 @@
             </div>
 
 
-            <div class="col-8">
+            <div class="col-8 p-0">
+                <div class="my-top-current-chat d-flex justify-content-between align-items-center p-3">
+                    <div class="d-flex align-items-center">
+                    <div>
+                        <img class="my-avatar-img me-2" src="img/User-Michele.png" alt="">
+                    </div>
+                    <div>
+                        <h5>Michele</h5>
+                        <p>Ultimo accesso alle 12:00</p>
+                    </div>
+                </div>
 
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-paperclip"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+                </div>
+                
             </div>
         </div>
     </main>

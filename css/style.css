@@ -1,0 +1,25 @@
+.my-app-container{
+    padding: 4rem 10rem;
+    background-color: lightgrey;
+    height: 100vh;
+}
+
+.my-chat-container {
+    padding: 1rem;
+    background-color: white;
+}
+
+.my-chat-user {
+    border-right: 2px solid #b1b1b1;
+}
+
+.my-avatar-img {
+    width: 80px;
+    height: 80px;
+}
+
+i {
+    font-size: 1.7rem;
+    padding: .65rem;
+    color: #b1b1b1;
+}

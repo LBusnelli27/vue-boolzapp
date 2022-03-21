@@ -23,7 +23,7 @@ i {
     border-right: 2px solid #d5d5d5;
 }
 
-.my-chat-user {
+.my-bg-light-gray {
     background-color: #eaeaea;
 }
 
@@ -61,6 +61,10 @@ i {
 
 /* * RIGHT side of app (specific chat) */
 
-.my-top-current-chat {
-    background-color: #eaeaea;
+.my-main-current-chat {
+    background-image: url(../img/background-chat.jpg);
+}
+
+.my-input-write-msg {
+    height: 50px;
 }

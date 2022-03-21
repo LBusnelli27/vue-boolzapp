@@ -1,5 +1,15 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+i {
+    font-size: 1.7rem;
+    padding: .65rem;
+    color: #b1b1b1;
+}
+
 .my-app-container{
-    padding: 4rem 10rem;
+    padding: 4rem 7rem;
     background-color: lightgrey;
     height: 100vh;
 }
@@ -10,7 +20,7 @@
 }
 
 .my-chat-user {
-    border-right: 2px solid #b1b1b1;
+    border-right: 2px solid #dfdfdf;
 }
 
 .my-avatar-img {
@@ -18,8 +28,23 @@
     height: 80px;
 }
 
-i {
-    font-size: 1.7rem;
-    padding: .65rem;
-    color: #b1b1b1;
+.my-notification-section {
+    background-color: #8edafc;
+}
+
+.my-notification-bell {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 2.5rem;
+}
+
+.my-notification-bell i {
+    color: #8edafc;
+}
+
+.my-input-search {
+    border: none;
+    width: 80%;
 }

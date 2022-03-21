@@ -24,8 +24,9 @@ i {
 }
 
 .my-avatar-img {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
 }
 
 .my-notification-section {
@@ -33,18 +34,22 @@ i {
 }
 
 .my-notification-bell {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background-color: white;
     border-radius: 50%;
-    font-size: 2.5rem;
 }
 
 .my-notification-bell i {
     color: #8edafc;
+    font-size: 1.5rem;
 }
 
 .my-input-search {
     border: none;
     width: 80%;
+}
+
+.my-specific-chat:hover {
+    background-color: #e9ebeb;
 }

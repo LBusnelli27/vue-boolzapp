@@ -58,21 +58,21 @@
                         <input class="my-input-search form-control" type="text" placeholder="Cerca o inizia una nuova chat">
                     </div>
 
-                    <div class="col-12"></div>
+                    <div v-for="(element, index) in contacts" class="my-specific-chat col-12 p-2 d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <div>
+                                <img class="my-avatar-img me-2" :src="'img/User-' + contacts[index].name + '.png'" alt="User Michele Img">
+                            </div>
+                            <div>
+                                <h4>{{ contacts[index].name }}</h4>
+                                <p>Ultimo messaggio inviato</p>
+                            </div>
+                        </div>
 
-                    <div class="col-12"></div>
-
-                    <div class="col-12"></div>
-
-                    <div class="col-12"></div>
-
-                    <div class="col-12"></div>
-
-                    <div class="col-12"></div>
-
-                    <div class="col-12"></div>
-
-                    <div class="col-12"></div>
+                        <div>
+                            <span>12:00</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 

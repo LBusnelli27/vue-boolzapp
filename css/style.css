@@ -72,7 +72,11 @@ i {
 }
 
 .my-msg p {
-    margin: 0;
+    margin-bottom: .3rem;
+}
+
+.my-msg span {
+    font-size: .8rem;
 }
 
 .my-msg-sent {

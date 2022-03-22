@@ -102,6 +102,11 @@
                     <div v-for="(element, index) in contacts[currentIndex].messages" class="row mb-3">
                         <div :class="(contacts[currentIndex].messages[index].status == 'received') ? 'my-msg-received' : 'my-msg-sent ms-auto'" class="my-msg my-msg-sent col-3">
                             <p>{{ contacts[currentIndex].messages[index].message }}</p>
+                            <div class="row">
+                                <div class="col text-end">
+                                    <span class="me-auto">{{ contacts[currentIndex].messages[index].date }}</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

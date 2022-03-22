@@ -98,14 +98,9 @@
 
 
                 <div class="p-5">
-                    <div class="row flex-row-reverse mb-3">
-                        <div class="my-msg my-msg-sent col-3">
-                            <p>Ciao come va?</p>
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="my-msg my-msg-recived col-3">
-                            <p>Tutto bene dai</p>
+                    <div v-for="(element, index) in contacts[currentIndex].messages" class="row mb-3">
+                        <div :class="(contacts[currentIndex].messages[index].status == 'received') ? 'my-msg-received' : 'my-msg-sent ms-auto'" class="my-msg my-msg-sent col-3">
+                            <p>{{ contacts[currentIndex].messages[index].message }}</p>
                         </div>
                     </div>
                 </div>

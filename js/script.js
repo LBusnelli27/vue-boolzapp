@@ -187,17 +187,15 @@ const app = new Vue (
                         status : 'sent'
                     });
                     this.myMessageInput = '';
+                    setTimeout(() => {
+                        this.contacts[currentChatIndex].messages.push({
+                            message : 'Ok!',
+                            status : 'received'
+                        });
+                    }, 1000);
                 } else  {
                     this.myMessageInput = '';
                 }
-                
-
-                setTimeout(() => {
-                    this.contacts[currentChatIndex].messages.push({
-                        message : 'Ok!',
-                        status : 'received'
-                    });
-                }, 1000);
             },
         }
     }

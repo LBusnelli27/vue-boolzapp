@@ -175,8 +175,7 @@ const app = new Vue (
         methods : {
             clickUser : function(userIndex) {
                 this.currentIndex = userIndex;
-                console.log(this.currentIndex);
-                console.log('Hai cliccato!');
+                console.log('Hai cliccato un contatto!');
             },
         }
     }

@@ -170,7 +170,9 @@ const app = new Vue (
             
             currentIndex : 0,
 
-            myMessageInput : ''
+            myMessageInput : '',
+
+            searchText : ''
         },
 
 
@@ -197,6 +199,17 @@ const app = new Vue (
                     this.myMessageInput = '';
                 }
             },
+
+            searchByName : function() {
+                if (this.searchText.trim() != '') {
+                    for (let i = 0; i < this.contacts.length; i++) {
+                        this.contacts[i].visible = this.contacts[i].name.toLowerCase().includes(this.searchText.toLowerCase());
+                    }
+                    this.searchText = '';
+                } else {
+                    this.searchText = '';
+                }
+            }
         }
     }
 )

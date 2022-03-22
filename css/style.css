@@ -17,6 +17,7 @@ i {
 /* * LEFT side of app (all the chats) */
 .my-chat-container {
     background-color: white;
+    height: 90vh;
 }
 
 .my-border-left-side {

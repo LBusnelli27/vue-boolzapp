@@ -28,6 +28,7 @@
 
 <body>
     <main class="my-app-container" id="app">
+        <!-- ? All chats container -->
         <div class="my-chat-container row">
             <div class="col-4 my-border-left-side">
                 <div class="row">
@@ -55,10 +56,10 @@
 
                     <div class="my-bg-light-gray col-12 d-flex align-items-center p-3">
                         <i class="fa-solid fa-magnifying-glass me-4"></i>
-                        <input class="my-input-search form-control" type="text" placeholder="Cerca o inizia una nuova chat">
+                        <input v-model="searchText"  @keyup.enter="searchByName" class="my-input-search form-control" type="text" placeholder="Cerca o inizia una nuova chat">
                     </div>
 
-                    <div @click="clickUser(index)" v-for="(element, index) in contacts" class="my-specific-chat col-12 p-2 d-flex align-items-center justify-content-between">
+                    <div @click="clickUser(index)" v-for="(element, index) in contacts" v-if="element.visible" class="my-specific-chat col-12 p-2 d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center">
                             <div>
                                 <img class="my-avatar-img me-2" :src="'img/User-' + contacts[index].name + '.png'" :alt="'User ' + contacts[index].name + ' Img'">

@@ -166,12 +166,18 @@ const app = new Vue (
                         }
                     ],
                 }
-            ]            
+            ],
+            
+            currentIndex : 0
         },
 
 
         methods : {
-            
+            clickUser : function(userIndex) {
+                this.currentIndex = userIndex;
+                console.log(this.currentIndex);
+                console.log('Hai cliccato!');
+            },
         }
     }
 )

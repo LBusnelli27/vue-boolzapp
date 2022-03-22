@@ -58,7 +58,7 @@
                         <input class="my-input-search form-control" type="text" placeholder="Cerca o inizia una nuova chat">
                     </div>
 
-                    <div v-for="(element, index) in contacts" class="my-specific-chat col-12 p-2 d-flex align-items-center justify-content-between">
+                    <div @click="clickUser(index)" v-for="(element, index) in contacts" class="my-specific-chat col-12 p-2 d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center">
                             <div>
                                 <img class="my-avatar-img me-2" :src="'img/User-' + contacts[index].name + '.png'" :alt="'User ' + contacts[index].name + ' Img'">

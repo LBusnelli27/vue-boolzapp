@@ -65,6 +65,23 @@ i {
     background-image: url(../img/background-chat.jpg);
 }
 
+.my-msg {
+    border-radius: 1rem;
+    padding: .6rem;
+}
+
+.my-msg p {
+    margin: 0;
+}
+
+.my-msg-sent {
+    background-color: #d5f9ba;
+}
+
+.my-msg-recived {
+    background-color: white;
+}
+
 .my-write-msg-container {
     position: absolute;
     bottom: 0;

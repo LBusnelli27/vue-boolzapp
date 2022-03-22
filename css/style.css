@@ -65,6 +65,13 @@ i {
     background-image: url(../img/background-chat.jpg);
 }
 
+.my-write-msg-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
 .my-input-write-msg {
     height: 50px;
 }

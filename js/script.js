@@ -168,7 +168,9 @@ const app = new Vue (
                 }
             ],
             
-            currentIndex : 0
+            currentIndex : 0,
+
+            myMessageInput : ''
         },
 
 
@@ -176,6 +178,26 @@ const app = new Vue (
             clickUser : function(userIndex) {
                 this.currentIndex = userIndex;
                 console.log('Hai cliccato un contatto!');
+            },
+
+            addMsg : function(currentChatIndex) {
+                if (this.myMessageInput.trim() != '') {
+                    this.contacts[currentChatIndex].messages.push({
+                        message : this.myMessageInput,
+                        status : 'sent'
+                    });
+                    this.myMessageInput = '';
+                } else  {
+                    this.myMessageInput = '';
+                }
+                
+
+                setTimeout(() => {
+                    this.contacts[currentChatIndex].messages.push({
+                        message : 'Ok!',
+                        status : 'received'
+                    });
+                }, 1000);
             },
         }
     }

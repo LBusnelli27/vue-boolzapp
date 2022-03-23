@@ -12,6 +12,7 @@ i {
     padding: 4rem 7rem;
     background-color: lightgrey;
     height: 100vh;
+    min-width: 1000px;
 }
 
 /* * LEFT side of app (all the chats) */

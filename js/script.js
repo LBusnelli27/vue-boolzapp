@@ -209,6 +209,12 @@ const app = new Vue (
                 } else {
                     this.searchText = '';
                 }
+            },
+
+            resetVisible : function() {
+                for (let i = 0; i < this.contacts.length; i++) {
+                    this.contacts[i].visible = true
+                }
             }
         }
     }

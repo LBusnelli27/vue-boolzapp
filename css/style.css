@@ -56,6 +56,11 @@ i {
     width: 80%;
 }
 
+.my-delete-search:hover {
+    color: red;
+    transform: scale(1.1);
+}
+
 .my-specific-chat:hover {
     background-color: #e9ebeb;
 }

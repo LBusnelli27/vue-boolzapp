@@ -185,12 +185,14 @@ const app = new Vue (
             addMsg : function(currentChatIndex) {
                 if (this.myMessageInput.trim() != '') {
                     this.contacts[currentChatIndex].messages.push({
+                        date : dayjs().format('HH:mm'),
                         message : this.myMessageInput,
                         status : 'sent'
                     });
                     this.myMessageInput = '';
                     setTimeout(() => {
                         this.contacts[currentChatIndex].messages.push({
+                            date : dayjs().format('HH:mm'),
                             message : 'Ok!',
                             status : 'received'
                         });
